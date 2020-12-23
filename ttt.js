@@ -1,34 +1,25 @@
+$(function() {
  
- 
-//array of the 9 squares
-var a=[
-document.getElementById("a"),
-document.getElementById("b"),
-document.getElementById("c"),
-document.getElementById("d"),
-document.getElementById("e"),
-document.getElementById("f"),
-document.getElementById("g"),
-document.getElementById("h"),
-document.getElementById("i"),
-];
 
 //result div
-var result=document.getElementById("result"); 
+var result=$("#result"); 
 
-//setting attributes and events to the elements
-for(var i=0; i<a.length; i++){
-a[i].letter="";
-a[i].onclick = 
-function () {
+
+var a=$(".squares");
+for(var i=0; i<a.length; i++)
+	a[i].letter="";
+$(".squares").click(function() {
 	if(checkgameover()=="No"){
-	if (this.letter==""){
-	this.innerHTML="X";
-	this.letter="X";
-	if(checkgameover()!="No")result.innerHTML="DRAW";
-	else engine();	}
-}
-};}
+		console.log("nene");
+		if (this.letter==""){
+		this.innerHTML="X";
+		this.letter="X";
+		if(checkgameover()!="No")result.html("DRAW");
+		else engine();	
+		}
+	}
+});
+
 // functions that starts the engine
 function engine(){
 	var maxscore=-10;
@@ -46,7 +37,7 @@ function engine(){
 	}
 	a[bestsquare].letter="O";	
 	a[bestsquare].innerHTML="O";
-	if(checkgameover()!="No")result.innerHTML="you lost";
+	if(checkgameover()!="No")result.html("you lost");
 }
 /// a recurcive function that finds the best move
 function minmax(enginesturn){	
@@ -94,11 +85,11 @@ function checkgameover(){
 	return "Draw";
 }
 //restart function
-function restart(){
-	for(var i=0; i<a.length; i++){
-		a[i].letter="";
-		a[i].innerHTML="";
-	}
-	result.innerHTML="";
-}
+$("#restart").click(function (){
+	a.letter="";
+	a.html("");
+	result.html("");
+});
+
+});
 

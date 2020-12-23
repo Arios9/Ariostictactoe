@@ -1,34 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="tttcss.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="tttcss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
 <body>
+  
+  <div id="restart">RESTART</div><br>
+  This is a tictactoe A.I. which uses <br>
+  an algorithm to play the best moves
 
-<div id="restart" onclick="restart()">RESTART</div><br>
-<a href="main.html"><div id="back">MAIN MENU</div></a><br>
-This is a tictactoe A.I. which uses <br>
-an algorithm to play the best moves
+  <div id="result"></div>
+  <table>
+    <tr>
+      <td class="squares" id="a"></td>
+      <td class="squares" id="b"></td>
+      <td class="squares" id="c"></td>
+    </tr>
+    <tr>
+      <td class="squares" id="d"></td>
+      <td class="squares" id="e"></td>
+      <td class="squares" id="f"></td>
+    </tr>
+    <tr>
+      <td class="squares" id="g"></td>
+      <td class="squares" id="h"></td>
+      <td class="squares" id="i"></td>
+    </tr>
+  </table>
+  <script src="ttt.js"></script>
 
-<div id="result"></div>
-<table>
-  <tr>
-    <td id="a"></td>
-    <td id="b"></td>
-    <td id="c"></td>
-  </tr>
-  <tr>
-    <td id="d"></td>
-    <td id="e"></td>
-    <td id="f"></td>
-  </tr>
-  <tr>
-    <td id="g"></td>
-    <td id="h"></td>
-    <td id="i"></td>
-  </tr>
-</table>
-<script src="ttt.js"></script>
 </body>
 </html>
+
