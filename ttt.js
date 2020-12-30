@@ -1,9 +1,6 @@
 $(function() {
  
 
-//result div
-var result=$("#result"); 
-
 
 var a=$(".squares");
 for(var i=0; i<a.length; i++)
@@ -86,7 +83,8 @@ function checkgameover(){
 }
 //restart function
 $("#restart").click(function (){
-	a.letter="";
+	for(var i=0; i<a.length; i++)
+	a[i].letter="";
 	a.html("");
 	result.html("");
 });
