@@ -1,0 +1,38 @@
+
+.squares {
+  border: 2px solid black;
+  background-color: coral;
+  height: 150px;
+  width: 150px;
+  font-size: 90px;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color: darkblue;
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#restart{
+	border: 1px solid black;
+  background-color: gold;
+	height: 50px;
+	width: 120px;
+	font-size:20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  font-size:30px;
+  text-align: center;
+}
