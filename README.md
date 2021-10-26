@@ -1,3 +1,3 @@
 # Ariostictactoe
 
-<a> arios9.github.io/ariostictactoe/ </a>
+<a href="arios9.github.io/ariostictactoe/"> Play </a>
